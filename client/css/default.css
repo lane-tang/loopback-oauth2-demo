@@ -1,0 +1,79 @@
+:root {
+  --mdc-theme-primary: #1890ff;
+  --mdc-theme-secondary: #feeae6;
+}
+
+body {
+  background-image: url(/images/login_bg.svg);
+  height: 100%;
+}
+
+a {
+  text-shadow: 2px 1px 3px rgba(200, 200, 200, 0.43);
+  padding-bottom: 5px;
+  padding-top: 10px;
+  color: #6464ff;
+  text-decoration: none;
+}
+
+.outer-wrap {
+  padding: 128px 0 24px;
+}
+
+.content {
+  display: block;
+  width: 768px;
+  margin: auto;
+  padding: 24px 16px;
+}
+
+.content-form {
+  display: block;
+  width: 384px;
+  margin: auto;
+  padding: 24px 16px;
+}
+
+.logo {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.username, .password {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.auto-login {
+  width: 300px;
+  margin: 4px 26px;
+}
+
+.login-form-forgot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: auto;
+}
+
+.btn-group {
+  width: 300px;
+  margin: auto;
+}
+
+.btn-allow {
+  float: right;
+}
+
+footer {
+  padding-top: 48px;
+  text-align: center;
+}

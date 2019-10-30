@@ -1,0 +1,37 @@
+<div class="outer-wrap">
+  <div class="mdc-card content-form">
+    <div class="top-container">
+      <a href="#" title="鹏飞云">
+        <img src="/images/logo-primary.png" class="logo" alt="鹏飞云">
+      </a>
+    </div>
+    <div class="main-container">
+      <form action="/oauth/login" method="post">
+        <div class="mdc-text-field username mdc-ripple-upgraded">
+          <input type="text" class="mdc-text-field__input" name="username" id="username-input">
+          <label for="username-input" class="mdc-floating-label">Username</label>
+        </div>
+        <div class="mdc-text-field password mdc-ripple-upgraded">
+          <input type="password" class="mdc-text-field__input" name="password" id="password-input">
+          <label for="password-input" class="mdc-floating-label">Password</label>
+        </div>
+        <div class="mdc-form-field auto-login">
+          <div class="mdc-checkbox">
+            <input type="checkbox" id="my-checkbox" class="mdc-checkbox__native-control" />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="my-checkbox">auto login</label>
+          <a href="#" class="login-form-forgot">forgot password</a>
+        </div>
+        <div class="button-container">
+          <input class="mdc-button mdc-button--raised login mdc-ripple-upgraded" type="submit" value="Login" id="login">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

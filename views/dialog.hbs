@@ -1,0 +1,23 @@
+<div class="outer-wrap">
+  <div class="mdc-card content-form">
+    <div class="top-container">
+      <a href="#" title="loopback">
+        <img src="/images/logo-primary.png" class="logo" alt="loopback-logo">
+      </a>
+    </div>
+
+    <div class="main-container">
+      <p>Hi {{user.username}}</p>
+      <p><b>{{client.name}}</b> is requesting <b>{{scopes}}</b> to your account.</p>
+      <p>Do you approve?</p>
+
+      <form action="/oauth/authorize/decision" method="post">
+        <input name="transaction_id" type="hidden" value="{{transactionId}}">
+        <div class="btn-group">
+          <button class="mdc-button btn-deny" type="submit" id="deny" name="cancel" value="Deny">Deny</button>
+          <button class="mdc-button mdc-button--raised btn-allow" type="submit">Allow</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

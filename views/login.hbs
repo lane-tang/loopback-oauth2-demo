@@ -34,4 +34,13 @@
       </form>
     </div>
   </div>
+
+  <script>
+    $(document).ready(function () {
+      // material design component
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.username'));
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.password'));
+      mdc.ripple.MDCRipple.attachTo(document.querySelector('.login'));
+    });
+  </script>
 </div>

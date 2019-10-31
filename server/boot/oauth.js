@@ -47,7 +47,7 @@ module.exports = function(app) {
   );
 
   // protect endpoints with OAuth 2.0
-  app.use(['/api'], oauth2.authenticate(options));
+  app.use(['/api'], oauth2.authenticate({session: false}));
 
   const router = app.loopback.Router();
 
@@ -59,10 +59,23 @@ module.exports = function(app) {
   });
 
   router.get('/oauth', function(req, res) {
-    res.render('oauth', {
-      host: 'localhost:3000',
-    });
+    if (req.query.code) {
+      res.render('oauth', {
+        code: req.query.code,
+        host: 'localhost:3000',
+      });
+    } else {
+      res.render('index', {
+        host: 'localhost:3000',
+      });
+    }
   });
+
+  router.get('/api/userinfo',
+    oauth2.authenticate({session: false}),
+    function(req, res) {
+      res.json(req.user);
+    });
 
   app.use(router);
 };

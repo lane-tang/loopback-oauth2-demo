@@ -3,6 +3,7 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "loopback-component-oauth2/common/models",
       "../common/models",
       "./models"
     ],
@@ -32,6 +33,30 @@
     }
   },
   "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OAuthAuthorizationCode": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OAuthClientApplication": {
+    "dataSource": "db",
+    "public": true
+  },
+  "OAuthPermission": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OAuthScopeMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OAuthScope": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OAuthAccessToken": {
     "dataSource": "db",
     "public": false
   }

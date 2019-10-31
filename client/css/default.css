@@ -41,7 +41,8 @@ a {
   margin: auto;
 }
 
-.username, .password {
+.username,
+.password {
   display: block;
   width: 300px;
   margin: 20px auto;
@@ -71,6 +72,12 @@ a {
 
 .btn-allow {
   float: right;
+}
+
+.code {
+  display: inline;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 footer {
